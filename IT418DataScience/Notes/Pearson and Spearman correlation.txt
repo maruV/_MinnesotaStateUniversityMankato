@@ -1,0 +1,8 @@
+Response variable is when you are predicting something. Also called as dependent variable; ex: what grade you will get in the test
+Explanatory variable is dependent variable. ex: Exam scores, Attendance, etc.
+
+Pearson's R uses Quantitative variables: Response and Explanatory.
+Do not use Pearson's R unless you have the scatterplot.
+Use Pearson's R only for Linear corelation not curvilinear or anything else.
+
+Use Spearman correlation for non-linear correlations.

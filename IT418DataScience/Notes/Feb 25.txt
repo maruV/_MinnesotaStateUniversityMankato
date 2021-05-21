@@ -1,0 +1,19 @@
+R
+-ggplot2
+-shiny: dashboarding
+
+Python
+-Matplotlib
+-Seaborn
+-Bokeh
+-D3.JS
+-Tableau
+
+bag of words: corpus
+-Term Frequency
+-IDS: Inverse Document Frequency
+
+Assignments
+-Matplotlib
+-Seaborn
+-Iris

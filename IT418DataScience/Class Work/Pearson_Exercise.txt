@@ -1,0 +1,22 @@
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import seaborn as sns
+%matplotlib inline
+
+data_url = 'http://bit.ly/2cLzoxH'
+# read data from url as pandas dataframe
+gapminder = pd.read_csv(data_url)
+# let us select two relevant columns
+gapminder = gapminder[['gdpPercap', 'lifeExp']]
+print(gapminder.head(3))
+
+# Plot scatterplot
+sns.scatterplot('lifeExp','gdpPercap',data=gapminder)
+plt.title('lifeExp vs gdpPercap', fontsize=18)
+plt.ylabel('gdpPercap', fontsize=16)
+plt.xlabel('lifeExp', fontsize=16)
+
+# Pearson's r
+gapminder.gdpPercap.corr(gapminder.lifeExp, method="pearson")
+ 

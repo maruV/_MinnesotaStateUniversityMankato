@@ -1,0 +1,5 @@
+data selection should be random
+do scatter plot first for pearson
+correlation is not causation
+pearson for linear correlation and quantitative variables
+spearman is a non parametric technique
