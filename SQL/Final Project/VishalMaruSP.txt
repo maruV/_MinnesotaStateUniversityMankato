@@ -1,0 +1,19 @@
+CREATE OR REPLACE PROCEDURE ADD_EMPLOYEE
+	(
+		p_emp_id	     IN NUMBER,
+		p_company_id	 IN NUMBER,
+		p_superv_id 	 IN NUMBER,
+		p_dept_id	     IN NUMBER,
+		p_emp_fName	     IN VARCHAR2,
+		p_emp_lName	     IN VARCHAR2,
+		p_emp_phone	     IN NUMBER,
+		p_emp_email	     IN VARCHAR2,
+		p_emp_hour_rate  IN NUMBER
+	)
+IS
+BEGIN
+	INSERT INTO EMPLOYEE (EMP_ID, EMP_F_NAME, EMP_L_NAME,
+        EMP_PHONE, EMP_EMAIL, EMP_HOUR_RATE, COMPANY_ID, SUPERV_ID, DEPT_ID)
+	VALUES (p_emp_id, p_emp_fName, p_emp_lName, p_emp_phone, p_emp_email,
+        p_emp_hour_rate, p_company_id, p_superv_id, p_dept_id);
+END ADD_EMPLOYEE;
